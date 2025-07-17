@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="COMAPNY">EASY TO TRAVEL</div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Luxury</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Discover Your Next Amazing Travel Experience</h1>
+  <button class="btn" onclick="showPopup()">Plan Your Trip</button>
+</section>
+
+<section class="section">
+  <h2>Popular Destinations</h2>
+  <div class="cards">
+    <div class="card">
+        <img src="Rajastan.jpg"alt="Rajasthan"/>
+      <h3>Rajasthan</h3>
+      <p>Highlights: Forts, palaces, desert safaris</p>
+      <p>Best For: Royal experiences, history, architecture.</p>
+    </div>
+    <div class="card">
+      <img src="Goa.jpg"alt="Goa"/>
+      <h3>Goa</h3>
+      <p>Highlights: Baga Beach, Anjuna, Fort Aguada, nightlife</p>
+      <p>Best For: Parties, seafood, water sports.</p>
+      
+    </div>
+    <div class="card">
+        <img src="Amdaman.jpg"alt="Amdaman"/>
+      <h3>Andaman & Nicobar Islands</h3>
+      <p>Highlights: Radhanagar Beach, Scuba diving at Havelock</p>
+      <p>Best For: Honeymoon, marine life, island hopping</p>
+    </div>
+    <div class="card">
+        <img src="Taj.jpg"alt="Rajasthan"/>
+        <h3>Others</h3>
+        <p>Taj Mahal(Agra-Uttarpradesh)<br>
+          For Modern City Life: Mumbai (Maharashtra)<br>
+          Bangalore (Karnataka)          
+</p>
+</div>
+  </div>
+</section>
+<div class="center-link">
+  <p>
+    For upto get 40% discount <a href="https://www.makemytrip.com/" target="_blank" style="color: red;">Book Now</a> 
+  </p>
+</div>
+
+<section class="sec">
+  <h2>Luxury Tours</h2>
+  <div class="cd">
+    <div class="card">
+        <img src="Euro.jpg"alt="Island"/>
+      <h3>European Cruise</h3>
+      <p>Luxury cruise across Europe.</p>
+    </div>
+    <div class="card">
+        <img src="Jet.jpg"alt="Island"/>
+      <h3>Private Jet Trip</h3>
+      <p>Exclusive private travel.</p>
+    </div>
+    <div class="card">
+        <img src="Island.jpg"alt="Island"/>
+        <h3>Island Retreat</h3>
+      <p>Secluded beaches & spas.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>© 2025 Subhajit Travel. All Rights Reserved.</p>
+</footer>
+
+
+<div class="popup" id="tripPopup">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <h2>Plan Your Trip</h2>
+    <form>
+      <label>Destination:<br><input type="text" name="destination" required></label><br><br>
+      <label>Date:<br><input type="date" name="date" required></label><br><br>
+      <label>People:<br><input type="number" name="people" min="1" required></label><br><br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
